@@ -21,7 +21,7 @@ export default function Contact() {
       body: encode({ "form-name": "test", name, email, message }),
     })
       .then(() => {
-        alert("Message sent!");
+        alert("Thank you for the Message, I will try to get back to you as soon as I can :)");
         setName("");
         setEmail("");
         setMessage("");
@@ -78,7 +78,7 @@ export default function Contact() {
             Contact Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Hit me Up If you wanna talk about coding, Games and Stuff .... Over Coffee Ofcourse :P
+            Hit me Up If you wanna talk about Coding, Games and Stuff .... Over Coffee Ofcourse :P
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">

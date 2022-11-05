@@ -12,15 +12,16 @@ export default function Reachme() {
         <AtSymbolIcon className="w-10 inline-block mb-4" />
         <div className="flex flex-wrap m-4">
           {reachs.map((reachme) => (
-            <div className="p-4 md:w-1/3 w-full">
-              <div className={`h-full p-8 rounded ${reachme.name === 'Github' ? "bg-white" : "bg-gray-800 bg-opacity-40"}`}>
-                <div className="inline-flex items-center object-center w-20">
+            <div className={`p-4 md:w-1/${reachs.length} w-full`}>
+              <div className={`h-full p-6 rounded ${reachme.name === 'Github' ? "bg-gray-200" : "bg-gray-800 bg-opacity-40"}`}>
+                <div className="inline-flex items-center object-center w-10">
                   <a href={reachme.link}>
                     <img
                       alt={reachme.name}
                       src={reachme.image}
-                      className="flex-shrink-0 object-cover object-center"
+                      className="flex-shrink-0 object-fill object-center w-full h-full"
                     />
+                    {/* <span className={`title-font font-medium ${reachme.name === 'Github' ? "text-black" : "text-white"}`}>{reachme.name}</span> */}
                   </a>
                 </div>
               </div>

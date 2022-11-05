@@ -11,7 +11,7 @@ export default function About() {
             A <Typed className="text-green-600" strings={["Web Developer", "Full Stack Dev", "Software Engineer", "Gamer"]} typeSpeed={100} backSpeed={50} loop />
           </h1>
           <p className="mb-8 leading-relaxed">
-            I love building Amazing Apps, I Enjoy working on Complex Projects and learning from them, whether it's with a team or on my own. <br />
+            I Like building Amazing Apps, I Enjoy working on Complex Projects and learning from them, whether it's with a team or on my own. <br /><br />
             I'm always interested in a Challenge, so be sure to reach out to me if you have one. <br />
           </p>
           <div className="flex justify-center">
