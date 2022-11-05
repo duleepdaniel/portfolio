@@ -1,6 +1,5 @@
 import React from "react";
 import { AtSymbolIcon } from "@heroicons/react/solid";
-import { BsLinkedin } from 'react-icons/fa';
 import { reachs } from "../data";
 
 export default function Reachme() {
