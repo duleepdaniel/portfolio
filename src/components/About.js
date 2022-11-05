@@ -7,9 +7,8 @@ export default function About() {
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Duleep.
-            <br className="hidden lg:inline-block" />A <Typed className="text-green-600" strings={["Web Developer", "Full Stack Dev", "Software Engineer", "Gamer"]}
-              typeSpeed={100} backSpeed={50} loop />
+            Hi, I'm Duleep. <br />
+            A <Typed className="text-green-600" strings={["Web Developer", "Full Stack Dev", "Software Engineer", "Gamer"]} typeSpeed={100} backSpeed={50} loop />
           </h1>
           <p className="mb-8 leading-relaxed">
             I love building Amazing Apps, I Enjoy working on Complex Projects and learning from them, whether it's with a team or on my own. <br />
