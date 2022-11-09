@@ -1,32 +1,33 @@
 import React from "react";
+import emailjs from 'emailjs-com';
+import Swal from "sweetalert2";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
+  const PUBLIC_ID = process.env.PUBLIC_ID;
+  const SERVICE_ID = process.env.SERVICE_ID;
+  const TEMPLATE_ID = process.env.TEMPLATE_ID;
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "test", name, email, message }),
-    })
-      .then(() => {
-        alert("Thank you for the Message, I will try to get back to you as soon as I can :)");
-        setName("");
-        setEmail("");
-        setMessage("");
-      }
-      ).catch((error) => alert(error));
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_ID)
+      .then((result) => {
+        Swal.fire({
+          icon: 'success',
+          text: "Thank you for the Message, I Will try to get back to you as soon as I can :)",
+          confirmButtonColor: '#38a169'
+        })
+      }, (error) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: error.text,
+        })
+      });
+    e.target.reset();
   }
 
   return (
@@ -88,6 +89,8 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
+              placeholder="A Badass Name"
+              required="true"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
               value={name}
@@ -99,6 +102,8 @@ export default function Contact() {
             </label>
             <input
               type="email"
+              required="true"
+              placeholder="A Awesome Email"
               id="email"
               name="email"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -113,6 +118,8 @@ export default function Contact() {
               Message
             </label>
             <textarea
+              required="true"
+              placeholder="A Cool Text"
               id="message"
               name="message"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
