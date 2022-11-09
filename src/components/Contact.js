@@ -7,9 +7,9 @@ export default function Contact() {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  const PUBLIC_ID = process.env.PUBLIC_ID;
-  const SERVICE_ID = process.env.SERVICE_ID;
-  const TEMPLATE_ID = process.env.TEMPLATE_ID;
+  const PUBLIC_ID = "kBICd-JU_rgmgvy_y";
+  const SERVICE_ID = "service_4fdqhj5";
+  const TEMPLATE_ID = "template_zq11ial";
 
   function handleSubmit(e) {
     e.preventDefault();
