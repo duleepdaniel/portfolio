@@ -27,7 +27,9 @@ export default function Contact() {
           text: error.text,
         })
       });
-    e.target.reset();
+    setName("");
+    setEmail("");
+    setMessage("");
   }
 
   return (
