@@ -13,6 +13,8 @@ export const skills = [
   { image: 'https://cdn.svgporn.com/logos/html-5.svg',       name: 'HTML'         },
   { image: 'https://cdn.svgporn.com/logos/css-3.svg',        name: 'CSS'          },
   { image: 'https://cdn.svgporn.com/logos/jss.svg',          name: 'Java Script'  },
+  { image: 'https://cdn.svgporn.com/logos/python.svg',       name: 'Python'       },
+  { image: 'https://cdn.svgporn.com/logos/django-icon.svg',  name: 'Django'       },
   { image: 'https://cdn.svgporn.com/logos/bootstrap.svg',    name: 'Boostrap'     },
   { image: 'https://cdn.svgporn.com/logos/sass.svg',         name: 'SASS'         },
   { image: 'https://cdn.svgporn.com/logos/nodejs.svg',       name: 'NodeJS'       },
