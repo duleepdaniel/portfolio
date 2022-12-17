@@ -91,7 +91,7 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
-              placeholder="A Badass Name"
+              placeholder="Enter your Name"
               required="true"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
@@ -105,7 +105,7 @@ export default function Contact() {
             <input
               type="email"
               required="true"
-              placeholder="A Awesome Email"
+              placeholder="Enter your Email"
               id="email"
               name="email"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
