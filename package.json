@@ -5,20 +5,18 @@
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@heroicons/react": "^1.0.1",
-    "@types/jest": "^29.2.1",
-    "@types/node": "^18.11.9",
-    "@types/react-dom": "^18.0.8",
+    "@types/jest": "^29.5.4",
+    "@types/node": "^18.17.14",
+    "@types/react-dom": "^18.2.7",
     "emailjs-com": "^3.2.0",
     "netlify": "^13.0.1",
     "netlify-cli": "^12.0.11",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.0.0",
     "react-icons": "^4.6.0",
     "react-native-paper": "^4.12.5",
     "react-scripts": "2.0.3",
-    "react-typed": "^1.2.0",
-    "sweetalert2": "^11.6.7",
-    "typescript": "^4.8.4"
+    "sweetalert2": "^11.6.7"
   },
   "scripts": {
     "start": "craco start",
@@ -33,12 +31,12 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^18.0.24",
+    "@types/react": "^18.2.21",
     "autoprefixer": "^9.8.6",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.5"
   },
   "browserslist": [
     ">0.2%",
