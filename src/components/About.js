@@ -28,13 +28,8 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          {/* <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="./coding.svg"
-          /> */}
-          <TagSphere keepRollingAfterMouseOut='false'/>
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 sm:w-1/2 w-5/6">
+          <TagSphere />
         </div>
       </div>
     </section>
