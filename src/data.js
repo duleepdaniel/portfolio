@@ -1,6 +1,6 @@
 export const reachs = [
   { name: 'Github',   link: 'https://github.com/duleepdaniel',                        image: 'https://cdn.svgporn.com/logos/github-icon.svg'   },
-  { name: 'Linkedin', link: 'https://in.linkedin.com/in/duleep-panthagani-a15b53158', image: 'https://cdn.svgporn.com/logos/linkedin-icon.svg' },
+  { name: 'Linkedin', link: 'https://www.linkedin.com/in/duleeppanthagani', image: 'https://cdn.svgporn.com/logos/linkedin-icon.svg' },
   { name: 'WhatsApp', link: 'https://wa.me/+919110317308',                            image: 'https://cdn.svgporn.com/logos/whatsapp-icon.svg' },
   { name: 'Gmail',    link: 'mailto:duleep.daniel@gmail.com',                         image: 'https://cdn.svgporn.com/logos/google-gmail.svg'  }
 ];
