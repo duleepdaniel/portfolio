@@ -1,8 +1,13 @@
-import { ChipIcon } from "@heroicons/react/solid";
 import React from "react";
+import { ChipIcon } from "@heroicons/react/solid";
 import { skills } from "../data";
 
-export default function Skills() {
+interface Skill {
+  name: string;
+  image: string;
+}
+
+const Skills: React.FC = () => {
   return (
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">
@@ -16,8 +21,8 @@ export default function Skills() {
           </p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/2 w-full">
+          {skills.map((skill: Skill) => (
+            <div key={skill.name} className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-800 rounded flex p-4 h-full items-center">
                 <img className="w-8 h-8 flex-shrink-0 mr-4" src={skill.image} alt={skill.name}/>
                 <span className="title-font font-medium text-white">
@@ -31,3 +36,5 @@ export default function Skills() {
     </section>
   );
 }
+
+export default Skills;
